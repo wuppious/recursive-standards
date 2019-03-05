@@ -1,0 +1,75 @@
+@font-face {
+    font-family: xkcd-script;
+    src: url('font/xkcd-script.woff') format('woff');
+}
+
+body {
+    font-family: xkcd-script;
+    font-size: 20px;
+    text-shadow: 0 0 2px rgba(0,0,0,0.15); 
+    color: rgba(0,0,0,0.9);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 366px;
+    margin: auto;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 8px;
+    align-items: center;
+}
+
+#title {
+    font-family: Lucida, Helvetica, sans-serif;
+    font-size: 21px;
+    font-variant: small-caps;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+#container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    width: 515px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: auto;
+
+}
+
+.countlower {
+    position: absolute;
+    top: 92px;
+    right: 109px;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: middle;
+}
+
+.countupper {
+    position: absolute;
+    top: -14px;
+    right: 175px;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: middle;
+}
+
+.pull-left {
+    float: left;
+    margin-right: 7px;
+    display: flex;
+    position: relative;
+    text-align: right;
+}
